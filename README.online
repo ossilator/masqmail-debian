@@ -5,7 +5,7 @@ Different methods for online detection
 -------------------------
 
 The scripts /etc/ppp/ip-{up,down}.d/{1,99}masqmail make use of the variable
-$IPPARAM, which you can defibe in your /etc/ppp/peers/<provider>
+$IPPARAM, which you can define in your /etc/ppp/peers/<provider>
 configuration with the ippparam option, eg:
 
 ippparam arcor
