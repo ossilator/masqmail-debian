@@ -1,4 +1,5 @@
 # has to be setuid:
 masqmail: setuid-binary usr/sbin/masqmail 4755 root/root
-# worked around that in debian/masqmail.config:
-masqmail: init-script-suggests-versioned-depends postinst
+# literally question marks treated as questions by lintian
+masqmail: using-question-in-extended-description-in-templates masqmail/local_hosts
+masqmail: using-question-in-extended-description-in-templates masqmail/local_nets

@@ -51,7 +51,7 @@ _Description: Nets considered local:
  dialup connection. Mail to these hosts will be delivered immediately,
  without checking for the online status.
  .
- You can use wildcards expressions like '*' and '?', eg. *.yournet.local
+ You can use wildcard expressions like '*' and '?', eg. *.yournet.local
  .
  If you have only one box, you can leave this empty. If you do not want
  to use masqmail as an offline MTA, and the whole internet or another mail
@@ -134,7 +134,7 @@ _Description: MDA command line (including options):
 Template: masqmail/alias_local_caseless
 Type: boolean
 Default: false
-_Description: Alias expansion regarding case or not:
+_Description: Should alias expansion regard case?
  Masqmail uses the file /etc/aliases to redirect local addresses.
  The search for a match in /etc/aliases can be regarding upper/lower
  case or insensitive to case.
