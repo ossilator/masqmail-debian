@@ -40,8 +40,8 @@ clean:
 	rm -f build-stamp
 
 	# Add here commands to clean up after the build process.
-	-$(MAKE) clean
-	-$(MAKE) distclean
+	[ ! -f Makefile ] || $(MAKE) clean
+	[ ! -f Makefile ] || $(MAKE) distclean
 	rm -f tests/test.conf
 	rm -f tests/local.sh
 	rm -f tests/smtpout.sh
@@ -88,7 +88,7 @@ binary-arch: build install
 #	dh_testversion
 	dh_testdir
 	dh_testroot
-	dh_installdebconf     
+	dh_installdebconf
 	dh_installdocs
 	rm -f debian/masqmail/usr/share/doc/masqmail/INSTALL
 	##cp -r docs debian/masqmail/$(DOC)/masqmail/html
@@ -111,7 +111,7 @@ binary-arch: build install
 	dh_md5sums
 	dh_builddeb
 
-source diff:                                                                  
+source diff:
 	@echo >&2 'source and diff are obsolete - use dpkg-source -b'; false
 
 binary: binary-indep binary-arch
