@@ -1,10 +1,10 @@
 This is Debian prepackaged version of MasqMail, a small mail transport agent
 for hosts without a permanent internet connection.
 
-This package is maintained by Oliver Kurth <oku@masqmail.cx>. Its source
-can be obtained from
+This package is maintained by markus schnalke <meillo@marmaro.de>.
+Its source can be obtained from
 
-    http://masqmail.cx/masqmail/
+    http://prog.marmaro.de/masqmail
 
 Upstream author: Oliver Kurth <oku@masqmail.cx>
 
@@ -22,8 +22,8 @@ Upstream author: Oliver Kurth <oku@masqmail.cx>
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+    along with this program; if not, write to the Free Software Foundation,
+    Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 On Debian GNU/Linux systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL'.
