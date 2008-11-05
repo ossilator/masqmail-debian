@@ -1,8 +1,8 @@
 Source: masqmail
 Section: mail
 Priority: extra
-Maintainer: Debian QA Group <packages@qa.debian.org>
-Standards-Version: 3.7.3
+Maintainer: markus schnalke <meillo@marmaro.de>
+Standards-Version: 3.8.0
 Build-Depends: debhelper (>> 3.0), liblockfile-dev, libglib2.0-dev, libident-dev
 
 Package: masqmail
@@ -12,12 +12,13 @@ Replaces: mail-transport-agent
 Provides: mail-transport-agent
 Suggests: mail-reader, logrotate
 Conflicts: mail-transport-agent
+Homepage: http://prog.marmaro.de/masqmail
 Description: A mailer for hosts without permanent internet connection
- MasqMail is an MTA (mail transport agent) and POP3 client for hosts 
- that don't have a permanent internet connection, eg. a home network 
+ MasqMail is an MTA (mail transport agent) and POP3 client for hosts
+ that don't have a permanent internet connection, eg. a home network
  or a single host at home and notebooks. It has special support for
  connections to different ISPs.
  .
- In these cases, MasqMail is a slim replacement for full-blown MTAs 
+ In these cases, MasqMail is a slim replacement for full-blown MTAs
  such as sendmail, exim, qmail or postfix. The POP3 client can be
  a small replacement for other full-featured tools like fetchmail.
