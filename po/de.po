@@ -11,13 +11,14 @@
 #    Developers do not need to manually edit POT or PO files.
 #
 # Matthias Julius <mdeb@julius-net.net>, 2006.
+# markus schnalke <meillo@marmaro.de>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: masqmail 0.2.21-1.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-09 09:46+0100\n"
-"PO-Revision-Date: 2006-12-08 21:22-0500\n"
-"Last-Translator: Matthias Julius <mdeb@julius-net.net>\n"
+"Project-Id-Version: masqmail 0.2.21-6\n"
+"Report-Msgid-Bugs-To: masqmail@packages.debian.org\n"
+"POT-Creation-Date: 2008-11-05 14:21+0100\n"
+"PO-Revision-Date: 2008-11-05 14:36+0100\n"
+"Last-Translator: markus schnalke <meillo@marmaro.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -131,8 +132,8 @@ msgid ""
 "You will most likely insert 'localhost', your hostname in its fully "
 "qualified form and just the simple hostname here."
 msgstr ""
-"Wahrscheinlich sollten Sie »localhost«, Ihren Hostnamen in dessen "
-"vollständig qualifizierter Form und den einfachen Hostnamen hier eingeben."
+"Wahrscheinlich sollten Sie »localhost«, Ihren Hostnamen in dessen vollständig "
+"qualifizierter Form und den einfachen Hostnamen hier eingeben."
 
 #. Type: string
 #. Description
@@ -163,9 +164,8 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../masqmail.templates:5001
-msgid "You can use wildcards expressions like '*' and '?', eg. *.yournet.local"
-msgstr ""
-"Sie können Platzhalter wie »*« und »?« verwenden, z. B. *.yournet.local"
+msgid "You can use wildcard expressions like '*' and '?', eg. *.yournet.local"
+msgstr "Sie können Platzhalter wie »*« und »?« verwenden, z. B. *.yournet.local"
 
 #. Type: string
 #. Description
@@ -369,8 +369,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:13001
-msgid "Alias expansion regarding case or not:"
-msgstr "Alias-Expansion beachtet Groß-/Kleinschreibung oder nicht:"
+msgid "Should alias expansion regard case?"
+msgstr "Soll Alias-Expansion Groß-/Kleinschreibung beachten?"
 
 #. Type: boolean
 #. Description
@@ -452,8 +452,8 @@ msgid ""
 "The format is -q, followed by an numeric value and one of the letters s,m,h,"
 "d,w for seconds, minutes, hours, days or weeks respectively."
 msgstr ""
-"Das Format ist »-q«, gefolgt von einer Zahl und einer der Buchstaben s, m, "
-"h, d oder w für Sekunden, Minuten, Stunden, Tage oder Wochen."
+"Das Format ist »-q«, gefolgt von einer Zahl und einer der Buchstaben s, m, h, "
+"d oder w für Sekunden, Minuten, Stunden, Tage oder Wochen."
 
 #. Type: string
 #. Description
