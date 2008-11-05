@@ -1,3 +1,11 @@
+masqmail (0.2.21-5) unstable; urgency=low
+
+  * New maintainer (Closes: #452188)
+  * fixed most Lintian warnings
+  * updated to standards version 3.8.0
+
+ -- markus schnalke <meillo@marmaro.de>  Sun, 28 Sep 2008 21:51:21 +0200
+
 masqmail (0.2.21-4) unstable; urgency=low
 
   * QA upload.
