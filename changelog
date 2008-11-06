@@ -1,3 +1,19 @@
+masqmail (0.2.21-6) unstable; urgency=low
+
+  * Added check for `hostname -f' error in debconf (Closes: #416237)
+  * Fixed delivering with empty or non-existent alias files. Thanks to Marcos
+    Dione for the hint where to look. (Closes: #417842)
+  * Fixed typos reported by Reuben Thomas. (Closes: #427096)
+  * Fixed empty or only-whitespace connection names. (Closes: #427095)
+  * Corrected man page about /etc/aliases. Thanks to Alexis. (Closes: #480477)
+  * Closing old bug which is neither in etch nor in lenny. (Closes: #174975)
+  * Added description to init script to remove lintian info.
+  * Updated debconf translation: de (by myself).
+  * Added updated translation: fr (by Ivan Buresi). Thanks to Christian Perrier
+    too. (Closes: #504615)
+
+ -- markus schnalke <meillo@marmaro.de>  Thu, 06 Nov 2008 10:52:46 +0100
+
 masqmail (0.2.21-5) unstable; urgency=low
 
   * New maintainer (Closes: #452188)
@@ -11,7 +27,7 @@ masqmail (0.2.21-4) unstable; urgency=low
   * QA upload.
   * Fix maintainer-script-calls-init-script-directly config:161 and use
     invoke-rc.d instead.
-  * Add patch by Radoslaw Grzanka to improve isdn support (Closes: #224275). 
+  * Add patch by Radoslaw Grzanka to improve isdn support (Closes: #224275).
   * Changed debian/compat from 6 to 4. WTF?
 
  -- Amaya Rodrigo Sastre <amaya@debian.org>  Mon, 03 Mar 2008 19:47:27 +0100
@@ -236,9 +252,9 @@ masqmail (0.1.16-1) unstable; urgency=low
 masqmail (0.1.15-1) unstable; urgency=low
 
   * New upstream version:
-    this is a security fix release. When an alias expansion expands to a 
+    this is a security fix release. When an alias expansion expands to a
     pipe, only the effective uid was changed to mail, but not the real uid.
-    This way, a command could gain root privileges. This is no longer 
+    This way, a command could gain root privileges. This is no longer
     possible, masqmail drops prvileges completely before executing the pipe
     command (closes: #102092).
   * src/conf.c: Correct a typo (bugfix from upstream). Maybe this fixes the
@@ -303,8 +319,8 @@ masqmail (0.1.7-2) unstable; urgency=low
 
 masqmail (0.1.7-1) unstable; urgency=low
 
-  * New upstream version: 
-  
+  * New upstream version:
+
     - debug option can be changed for privileged users only
     - fixed a security hole: -C option for unprivileged users now implies
       run_as_user and drops _all_ privileges
@@ -326,9 +342,9 @@ masqmail (0.1.7-1) unstable; urgency=low
 
 masqmail (0.1.6-2) unstable; urgency=low
 
-  * Security bugfix: An unprivileged user could use masqmail -C' 
+  * Security bugfix: An unprivileged user could use masqmail -C'
     (use alternative configuration file) and/or -d' (enable debug output)
-    for exploits. We disable these options for non-privileged users 
+    for exploits. We disable these options for non-privileged users
     (#74422 will be closed by the upload of 0.0.12-3 to stable).
 
  -- Gregor Hoffleit <flight@debian.org>  Sun, 15 Oct 2000 20:42:04 +0200
