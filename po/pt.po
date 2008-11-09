@@ -1,22 +1,12 @@
 # translation of masqmail debconf to Portuguese
+# Américo Monteiro <a_monteiro@netcabo.pt>, 2007, 2008.
 #
-#    Translators, if you are not familiar with the PO format, gettext
-#    documentation is worth reading, especially sections dedicated to
-#    this format, e.g. by running:
-#         info -n '(gettext)PO Files'
-#         info -n '(gettext)Header Entry'
-#    Some information specific to po-debconf are available at
-#            /usr/share/doc/po-debconf/README-trans
-#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
-#    Developers do not need to manually edit POT or PO files.
-#
-# Américo Monteiro <a_monteiro@netcabo.pt>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: masqmail 0.2.21-1.2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-09 09:46+0100\n"
-"PO-Revision-Date: 2007-07-23 21:27+0100\n"
+"Project-Id-Version: masqmail 0.2.21-6\n"
+"Report-Msgid-Bugs-To: masqmail@packages.debian.org\n"
+"POT-Creation-Date: 2008-11-05 14:21+0100\n"
+"PO-Revision-Date: 2008-11-06 01:41+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@netcabo.pt>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,8 +27,8 @@ msgid ""
 "The /etc/masqmail/masqmail.conf file can be handled automatically by "
 "debconf, or manually by you."
 msgstr ""
-"O ficheiro /etc/masqmail/masqmail.conf pode ser gerido automaticamente "
-"pelo debconf, ou manualmente por si."
+"O ficheiro /etc/masqmail/masqmail.conf pode ser gerido automaticamente pelo "
+"debconf, ou manualmente por si."
 
 #. Type: boolean
 #. Description
@@ -48,10 +38,10 @@ msgid ""
 "handled by debconf if you select this option; if those markers are absent, "
 "you will have to update the file manually, or move or delete the file."
 msgstr ""
-"Note que apenas uma secção especificamente marcada no ficheiro de configuração "
-"será gerida pelo debconf se seleccionar esta opção; se esse marcadores "
-"estiverem ausentes, você terá que actualizar o ficheiro manualmente, "
-"movê-lo ou apagá-lo."
+"Note que apenas uma secção especificamente marcada no ficheiro de "
+"configuração será gerida pelo debconf se seleccionar esta opção; se esses "
+"marcadores estiverem ausentes, você terá que actualizar o ficheiro "
+"manualmente, movê-lo ou apagá-lo."
 
 #. Type: boolean
 #. Description
@@ -80,10 +70,11 @@ msgid ""
 "about masqmail configuration will be asked."
 msgstr ""
 "Se você seleccionar esta opção, o ficheiro de configuração existente será "
-"salvaguardado em /etc/masqmail/masqmail.conf.debconf-backup e um novo ficheiro "
-"será escrito em /etc/masqmail/masqmail.conf. Se você não seleccionar esta opção, "
-"o ficheiro de configuração existente não será gerido pelo debconf, e não serão "
-"feitas mais perguntas acerca da configuração do masqmail."
+"salvaguardado em /etc/masqmail/masqmail.conf.debconf-backup e um novo "
+"ficheiro será escrito em /etc/masqmail/masqmail.conf. Se você não "
+"seleccionar esta opção, o ficheiro de configuração existente não será gerido "
+"pelo debconf, e não serão feitas mais perguntas acerca da configuração do "
+"masqmail."
 
 #. Type: string
 #. Description
@@ -100,9 +91,9 @@ msgid ""
 "expanding unqualified addresses, the Message ID and so on."
 msgstr ""
 "Por favor indique o nome da máquina usado pelo masqmail para se identificar "
-"a outros. O mais provável é ser o nome da sua máquina. Isto é usado pelo cartaz "
-"de boas vindas do SMTP, para expandir endereços não qualificados, identificação "
-"de mensagem (ID) e para mais coisas."
+"a outros. O mais provável é ser o nome da sua máquina. Isto é usado pelo "
+"cartaz de boas vindas do SMTP, para expandir endereços não qualificados, "
+"identificação de mensagem (ID) e para mais coisas."
 
 #. Type: string
 #. Description
@@ -129,8 +120,8 @@ msgid ""
 "You will most likely insert 'localhost', your hostname in its fully "
 "qualified form and just the simple hostname here."
 msgstr ""
-"Você irá mais certamente inserir aqui 'localhost', o nome da sua máquina "
-"na sua forma totalmente qualificada e apenas o nome simples da máquina."
+"Você irá provavelmente inserir 'localhost' aqui, o nome da sua máquina na "
+"sua forma totalmente qualificada e apenas o nome simples da máquina."
 
 #. Type: string
 #. Description
@@ -155,14 +146,16 @@ msgid ""
 msgstr ""
 "Por favor, indique a lista de máquinas, separadas por ponto-e-vírgula (;), "
 "que estão na sua rede local, isto é, estão sempre alcançáveis, sem ser "
-"necessário efectuar ligação. Correio para estas máquinas será entregue "
+"necessário efectuar ligação. O correio para estas máquinas será entregue "
 "imediatamente, sem verificação do estado da ligação."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:5001
-msgid "You can use wildcards expressions like '*' and '?', eg. *.yournet.local"
-msgstr "Pode usar expressões variáveis como '*' e '?', exemplo, *.yournet.local"
+#| msgid ""
+#| "You can use wildcards expressions like '*' and '?', eg. *.yournet.local"
+msgid "You can use wildcard expressions like '*' and '?', eg. *.yournet.local"
+msgstr "Você pode usar expressões variáveis como '*' e '?', exemplo, *.yournet.local"
 
 #. Type: string
 #. Description
@@ -173,10 +166,10 @@ msgid ""
 "server which accepts outgoing mail is at all times reachable to you, just "
 "insert '*'."
 msgstr ""
-"Se você tem apenas uma máquina, pode deixar este campo vazio. Se você não quer "
-"usar o masqmail como MTA sem ligação, e toda a internet ou outro servidor de "
-"mail que aceita envio de correio está sempre alcançável para si, simplesmente "
-"insira '*'."
+"Se você tiver apenas uma máquina, pode deixar este campo vazio. Se você não "
+"quiser usar o masqmail como MTA sem ligação, e toda a internet ou outro "
+"servidor de mail que aceite envio de correio está sempre alcançável para si, "
+"simplesmente insira '*'."
 
 #. Type: string
 #. Description
@@ -194,11 +187,11 @@ msgid ""
 "SMTP messages to this host, add the address of your network interface here, "
 "eg.: localhost:25;192.168.1.2:25."
 msgstr ""
-"Por razões de segurança, o masqmail não escuta em todas as interfaces de rede "
-"por omissão. Se não há mais máquinas ligadas à sua máquina, apenas deixe o "
-"valor de omissão 'localhost:25'. Se existirem outras máquinas que podem querer "
-"enviar mensagens SMTP para esta máquina, adicione o endereço da sua interface "
-"de rede aqui, exemplo: localhost:25;192.168.1.2:25."
+"Por razões de segurança, o masqmail não escuta em todas as interfaces de "
+"rede por omissão. Se não há mais máquinas ligadas à sua máquina, apenas "
+"deixe o valor de omissão 'localhost:25'. Se existirem outras máquinas que "
+"podem querer enviar mensagens SMTP para esta máquina, adicione o endereço da "
+"sua interface de rede aqui, exemplo: localhost:25;192.168.1.2:25."
 
 #. Type: string
 #. Description
@@ -207,8 +200,8 @@ msgid ""
 "Of course you can also replace the '25' with another port number, however "
 "this is unusual."
 msgstr ""
-"Claro que você também pode substituir o '25' por outro número de porto, "
-"no entanto isso não é usual."
+"Claro que você também pode substituir o '25' por outro número de porto, no "
+"entanto isso não é usual."
 
 #. Type: boolean
 #. Description
@@ -223,8 +216,8 @@ msgid ""
 "You can decide whether masqmail should log via syslog or not. If not, logs "
 "will be written to /var/log/masqmail/masqmail.log."
 msgstr ""
-"Você pode decidir se o masqmail deverá relatar via syslog ou não. Se não, os "
-"relatórios serão escritos para /var/log/masqmail/masqmail.log."
+"Você pode decidir se o masqmail deverá registar via syslog ou não. Caso não "
+"o faça, os relatórios serão escritos para /var/log/masqmail/masqmail.log."
 
 #. Type: select
 #. Choices
@@ -251,7 +244,7 @@ msgid ""
 "Masqmail has different methods to determine whether it is online or not, "
 "these are 'file','pipe'."
 msgstr ""
-"Masqmail tem diferentes métodos de determinar se existe ligação à rede ou "
+"O masqmail tem diferentes métodos de determinar se existe ligação à rede ou "
 "não, estes são por 'ficheiro' e por 'pipe'."
 
 #. Type: select
@@ -261,8 +254,8 @@ msgid ""
 "For 'file', masqmail checks for the existence of a file, and, if it exists, "
 "reads from it the name of the connection."
 msgstr ""
-"Para 'ficheiro', masqmail verifica a existência de um ficheiro e, se existir, "
-"lê dele o nome da ligação."
+"Para 'ficheiro', o masqmail verifica a existência de um ficheiro e, se "
+"existir, lê dele o nome da ligação."
 
 #. Type: select
 #. Description
@@ -295,8 +288,8 @@ msgid ""
 "that, when this program is called, masqmail has the user id 'mail'."
 msgstr ""
 "Por favor escolha o programa a usar para determinar o estado da ligação. Por "
-"favor note que, quando este programa é chamado, o masqmail tem a identificação "
-"de utilizador 'mail'."
+"favor note que, quando este programa é chamado, o masqmail tem a "
+"identificação de utilizador 'mail'."
 
 #. Type: select
 #. Description
@@ -311,8 +304,8 @@ msgid ""
 "Local mail can be delivered to a mailbox, to an MDA (eg. procmail) or to a "
 "qmail style Maildir in the users home dir."
 msgstr ""
-"Correio local pode ser entregue a uma caixa de correio, a um MDA (ex. procmail) "
-"ou a uma Maildir estilo qmail na pasta pessoal dos utilizadores."
+"O correio local pode ser entregue a uma caixa de correio, a um MDA (ex. "
+"procmail) ou a uma Maildir estilo qmail na pasta pessoal dos utilizadores."
 
 #. Type: select
 #. Description
@@ -321,8 +314,8 @@ msgid ""
 "You can select the default style here. You can configure this also on a per-"
 "user basis with the options mbox_users, mda_users and maildir_users."
 msgstr ""
-"Você pode seleccionar o estilo por omissão aqui. Você também pode configurar isto "
-"numa base por-utilizador com as opções mbox_users, mda_users e maildir_users."
+"Você pode seleccionar o estilo por omissão aqui. Você também pode configurar "
+"isto por utilizador com as opções mbox_users, mda_users e maildir_users."
 
 #. Type: string
 #. Description
@@ -338,9 +331,9 @@ msgid ""
 "arguments. You can use substitution values here, eg. ${rcpt_local} for the "
 "user name."
 msgstr ""
-"Por favor escolha o caminho para o agente de entrega de correio (MDA), incluindo "
-"os seus argumentos. Você pode usar valores de subscrição aqui, exemplo "
-"${rcpt_local} para o nome de utilizador."
+"Por favor escolha o caminho para o agente de entrega de correio (MDA), "
+"incluindo os seus argumentos. Você pode usar valores de subscrição aqui, "
+"exemplo ${rcpt_local} para o nome de utilizador."
 
 #. Type: string
 #. Description
@@ -361,8 +354,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:13001
-msgid "Alias expansion regarding case or not:"
-msgstr "Expansão de nomes alternativos observando minúscula/maiúscula ou não:"
+#| msgid "Alias expansion regarding case or not:"
+msgid "Should alias expansion regard case?"
+msgstr "Deverá a expansão de nomes alternativos observar minúsculas/maiúsculas?"
 
 #. Type: boolean
 #. Description
@@ -372,9 +366,9 @@ msgid ""
 "for a match in /etc/aliases can be regarding upper/lower case or insensitive "
 "to case."
 msgstr ""
-"Masqmail usa o ficheiro /etc/aliases para redireccionar endereços locais. A "
-"busca por uma correspondência em /etc/aliases pode ser feita sensivelmente ou "
-"insensivelmente a letras minúsculas/maiúsculas."
+"O masqmail usa o ficheiro /etc/aliases para redireccionar endereços locais. A "
+"busca por uma correspondência em /etc/aliases pode ser feita sensivelmente "
+"ou insensivelmente a letras minúsculas/maiúsculas."
 
 #. Type: boolean
 #. Description
@@ -416,10 +410,10 @@ msgid ""
 "were not online on the first attempt to send a mail."
 msgstr ""
 "Por favor escolha esta opção se quer que o masqmail arranque como um serviço "
-"independente de lista. É bem provável que vá precisar disto. Isto é usado para "
-"correio que não pode ser entregue imediatamente, seja devido a falhas de "
-"entrega ou porque você não estava ligado à rede a quando da primeira tentativa "
-"de enviar o correio."
+"independente de lista. É bem provável que vá precisar disto. Isto é usado "
+"para correio que não pode ser entregue imediatamente, seja devido a falhas "
+"de entrega ou porque você não estava ligado à rede a quando da primeira "
+"tentativa de enviar o correio."
 
 #. Type: string
 #. Description
@@ -467,10 +461,10 @@ msgid ""
 "If you do so, masqmail will try to fetch mail from POP3 servers that you "
 "configure in regular intervals, detecting the online status first."
 msgstr ""
-"Por favor escolha esta opção se desejar que o masqmail arranque como um serviço "
-"independente de busca. Se o fizer, masqmail tentará buscar correio de servidores "
-"POP3 que você configurar, em intervalos regulares, detectando o estado de "
-"ligação primeiro."
+"Por favor escolha esta opção se desejar que o masqmail arranque como um "
+"serviço independente de busca. Se o fizer, masqmail tentará buscar correio "
+"de servidores POP3 que você configurar, em intervalos regulares, detectando "
+"o estado de ligação primeiro."
 
 #. Type: boolean
 #. Description
@@ -479,8 +473,8 @@ msgid ""
 "No matter what you choose here, you can later select whether you want to "
 "fetch mail the moment you get online."
 msgstr ""
-"Independentemente do que escolher aqui, mais tarde você pode seleccionar se quer "
-"buscar o correio no momento que a sua ligação é efectuada."
+"Independentemente do que escolher aqui, mais tarde você pode seleccionar se "
+"quer buscar o correio no momento que a sua ligação é efectuada."
 
 #. Type: string
 #. Description
@@ -501,8 +495,8 @@ msgid ""
 "The format is -go, followed by an numeric value and one of the letters s,m,h,"
 "d,w for seconds, minutes, hours, days or weeks respectively."
 msgstr ""
-"O formato é -go, seguido de um valor numérico e uma das letras s,m,h,d,w, para "
-"segundos, minutos, horas, dias ou semanas respectivamente."
+"O formato é -go, seguido de um valor numérico e uma das letras s,m,h,d,w, "
+"para segundos, minutos, horas, dias ou semanas respectivamente."
 
 #. Type: string
 #. Description
@@ -525,8 +519,8 @@ msgid ""
 "ip-up or in /etc/network/if-up.d/."
 msgstr ""
 "Por favor escolha se quer que o masqmail despeje imediatamente a lista de "
-"correio assim que se liga à rede. Isto é feito com o script ip-up em /etc/ppp/"
-"ip-up ou em /etc/network/if-up.d/."
+"correio assim que se liga à rede. Isto é feito com o script ip-up em /etc/"
+"ppp/ip-up ou em /etc/network/if-up.d/."
 
 #. Type: boolean
 #. Description
@@ -543,8 +537,8 @@ msgid ""
 "etc/ppp/ip-up or in /etc/network/if-up.d/."
 msgstr ""
 "Por favor escolha se quer imediatamente que o masqmail busque correio dos "
-"servidores POP3 assim que efectua ligação à rede. Isto será feito com o script "
-"ip-up existente em /etc/ppp/ip-up ou em /etc/network/if-up.d/."
+"servidores POP3 assim que efectua ligação à rede. Isto será feito com o "
+"script ip-up existente em /etc/ppp/ip-up ou em /etc/network/if-up.d/."
 
 #. Type: string
 #. Description
@@ -560,10 +554,10 @@ msgid ""
 "or fetching mails when going up. The list will be used in the /etc/ppp/ip-up "
 "and /etc/network/if-up.d/ scripts, when the interface goes up."
 msgstr ""
-"Por favor escolha a lista de interfaces de rede que irão desencadear operações "
-"na lista de envio e/ou obter correio após ligação. A lista será usada nos "
-"scripts /etc/ppp/ip-up e /etc/network/if-up.d/, quando a interface efectuar "
-"ligação."
+"Por favor escolha a lista de interfaces de rede que irão desencadear "
+"operações na lista de envio e/ou obter correio após ligação. A lista será "
+"usada nos scripts /etc/ppp/ip-up e /etc/network/if-up.d/, quando a interface "
+"efectuar ligação."
 
 #. Type: string
 #. Description
@@ -572,8 +566,8 @@ msgid ""
 "A reasonable choice is eg. 'ppp0' for a desktop at home, or 'ppp0 eth0' for "
 "a notebook."
 msgstr ""
-"Uma escolha razoável é, exemplo 'ppp0' para um Pc de secretária em casa, "
-"ou 'ppp0 eth0' para um portátil."
+"Uma escolha razoável é, exemplo 'ppp0' para um PC de secretária em casa, ou "
+"'ppp0 eth0' para um portátil."
 
 #. Type: string
 #. Description
