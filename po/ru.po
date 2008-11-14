@@ -1,4 +1,4 @@
-# translation of masqmail_debconf_ru.po to Russian
+# translation of ru.po to Russian
 #
 #    Translators, if you are not familiar with the PO format, gettext
 #    documentation is worth reading, especially sections dedicated to
@@ -10,21 +10,20 @@
 #         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
 #    Developers do not need to manually edit POT or PO files.
 #
-# Yuri Kozlov <kozlov.y@gmail.com>, 2006.
+# Yuri Kozlov <kozlov.y@gmail.com>, 2006, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.2.21-1.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-09 09:46+0100\n"
-"PO-Revision-Date: 2006-12-07 23:36+0300\n"
+"Project-Id-Version: masqmail 0.2.21-6\n"
+"Report-Msgid-Bugs-To: masqmail@packages.debian.org\n"
+"POT-Creation-Date: 2008-11-05 14:21+0100\n"
+"PO-Revision-Date: 2008-11-05 20:28+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Type: boolean
 #. Description
@@ -163,10 +162,12 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../masqmail.templates:5001
-msgid "You can use wildcards expressions like '*' and '?', eg. *.yournet.local"
+#| msgid ""
+#| "You can use wildcards expressions like '*' and '?', eg. *.yournet.local"
+msgid "You can use wildcard expressions like '*' and '?', eg. *.yournet.local"
 msgstr ""
-"Здесь можно использовать выражения подстановки типа '*' и '?', например *."
-"yournet.local."
+"Здесь можно использовать выражения подстановки типа '*' и '?', "
+"например *.yournet.local"
 
 #. Type: string
 #. Description
@@ -354,8 +355,7 @@ msgstr ""
 #. Description
 #: ../masqmail.templates:12001
 msgid "For other substitutions please see the man page."
-msgstr ""
-"Описание других возможных подстановок смотрите на странице руководства."
+msgstr "Описание других возможных подстановок смотрите на странице руководства."
 
 #. Type: string
 #. Description
@@ -371,8 +371,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:13001
-msgid "Alias expansion regarding case or not:"
-msgstr "Важен ли регистр символов при автодополнении псевдонимов:"
+#| msgid "Alias expansion regarding case or not:"
+msgid "Should alias expansion regard case?"
+msgstr "Учитывать регистр символов при автодополнении псевдонимов?"
 
 #. Type: boolean
 #. Description
@@ -560,8 +561,7 @@ msgstr ""
 #. Description
 #: ../masqmail.templates:21001
 msgid "List of interfaces used for masqmail online detection:"
-msgstr ""
-"Список интерфейсов подключения к сети, которые будет отслеживать masqmail:"
+msgstr "Список интерфейсов подключения к сети, которые будет отслеживать masqmail:"
 
 #. Type: string
 #. Description
@@ -593,3 +593,4 @@ msgid "Set to 'all' for all interfaces, or 'none' for no interfaces."
 msgstr ""
 "Укажите значение 'all', если нужно отслеживать все интерфейсы, или 'none', "
 "если не нужно отслеживать интерфейсы вообще."
+
