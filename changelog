@@ -8,11 +8,13 @@ masqmail (0.2.21-6) unstable; urgency=low
   * Corrected man page about /etc/aliases. Thanks to Alexis. (Closes: #480477)
   * Closing old bug which is neither in etch nor in lenny. (Closes: #174975)
   * Added description to init script to remove lintian info.
-  * Updated debconf translation: de (by myself).
-  * Added updated translation: fr (by Ivan Buresi). Thanks to Christian Perrier
-    too. (Closes: #504615)
+  * Updated debconf translations:
+    - de (by myself)
+    - fr (by Ivan Buresi, Christian Perrier; Closes: #504615)
+    - pt (by Traduz; Closes: #504794)
+    - ru (by Yuri Kozlov; Closes: #505730)
 
- -- markus schnalke <meillo@marmaro.de>  Thu, 06 Nov 2008 10:52:46 +0100
+ -- markus schnalke <meillo@marmaro.de>  Fri, 14 Nov 2008 21:12:27 +0100
 
 masqmail (0.2.21-5) unstable; urgency=low
 
