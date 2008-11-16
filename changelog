@@ -13,8 +13,9 @@ masqmail (0.2.21-6) unstable; urgency=low
     - fr (by Ivan Buresi, Christian Perrier; Closes: #504615)
     - pt (by Traduz; Closes: #504794)
     - ru (by Yuri Kozlov; Closes: #505730)
+  * Added new debconf translation: sv (by Martin Bagge; Closes: #505794)
 
- -- markus schnalke <meillo@marmaro.de>  Fri, 14 Nov 2008 21:12:27 +0100
+ -- markus schnalke <meillo@marmaro.de>  Sun, 16 Nov 2008 13:56:33 +0100
 
 masqmail (0.2.21-5) unstable; urgency=low
 
