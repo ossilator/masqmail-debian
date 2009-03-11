@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: masqmail\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-09 09:46+0100\n"
+"Report-Msgid-Bugs-To: masqmail@packages.debian.org\n"
+"POT-Creation-Date: 2008-11-05 14:21+0100\n"
 "PO-Revision-Date: 2006-12-04 00:50+0200\n"
 "Last-Translator: Tomas Fidler <tomas.fidler@tiscali.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
@@ -157,7 +157,10 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../masqmail.templates:5001
-msgid "You can use wildcards expressions like '*' and '?', eg. *.yournet.local"
+#, fuzzy
+#| msgid ""
+#| "You can use wildcards expressions like '*' and '?', eg. *.yournet.local"
+msgid "You can use wildcard expressions like '*' and '?', eg. *.yournet.local"
 msgstr ""
 "U výrazů můžete použít zástupné znaky jako '*' a '?', např. *.vasesit.local"
 
@@ -360,7 +363,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:13001
-msgid "Alias expansion regarding case or not:"
+#, fuzzy
+#| msgid "Alias expansion regarding case or not:"
+msgid "Should alias expansion regard case?"
 msgstr "Všímat si velikosti písmen aliasů?:"
 
 #. Type: boolean
