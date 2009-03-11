@@ -13,9 +13,11 @@ masqmail (0.2.21-6) unstable; urgency=low
     - fr (by Ivan Buresi, Christian Perrier; Closes: #504615)
     - pt (by Traduz; Closes: #504794)
     - ru (by Yuri Kozlov; Closes: #505730)
+    - vi (by Clytie Siddall; Closes: #513332)
   * Added new debconf translation: sv (by Martin Bagge; Closes: #505794)
+  * fixed watch file
 
- -- markus schnalke <meillo@marmaro.de>  Sun, 16 Nov 2008 13:56:33 +0100
+ -- markus schnalke <meillo@marmaro.de>  Wed, 11 Mar 2009 10:13:48 +0100
 
 masqmail (0.2.21-5) unstable; urgency=low
 
