@@ -1,27 +1,25 @@
-# translation of masqmail.po to swedish
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# ITALIAN TRANSLATION OF MASQMAIL'S.PO-DEBCONF FILE
+# COPYRIGHT (C) 2009 THE MASQMAIL'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the masqmail package.
 #
-# Martin Bagge <brother@bsnet.se>, 2009.
+# Vincenzo Campanella <vinz65@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: masqmail\n"
+"Project-Id-Version: masqmail 0.2.21-6\n"
 "Report-Msgid-Bugs-To: masqmail@packages.debian.org\n"
 "POT-Creation-Date: 2009-04-06 07:54+0200\n"
-"PO-Revision-Date: 2009-04-12 01:13+0100\n"
-"Last-Translator: Martin Bagge <brother@bsnet.se>\n"
-"Language-Team: swedish <debian-l10n-swedish@lists.debian.org>\n"
+"PO-Revision-Date: 2009-04-08 18:48+0200\n"
+"Last-Translator: Vincenzo Campanella <vinz65@gmail.com>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"X-Poedit-Language: Swedish\n"
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:2001
 msgid "Manage masqmail.conf automatically?"
-msgstr "Vill du att masqmail.conf ska hanteras automatiskt?"
+msgstr "Gestire automaticamente masqmail.conf?"
 
 #. Type: boolean
 #. Description
@@ -30,9 +28,9 @@ msgid ""
 "The /etc/masqmail/masqmail.conf file can be handled automatically by "
 "answering a few questions, or entirely manually by the local administrator."
 msgstr ""
-"Filen /etc/masqmail/masqmail.conf kan hanteras automatiskt genom att du "
-"svarar på några frågor, alternativet är att administratören själv hanterar "
-"hela filen manuellt."
+"Il file «/etc/masqmail/masqmail.conf» può essere gestito automaticamente, "
+"dopo aver risposto ad alcune domande, oppure in modo completamente manuale "
+"dall'amministratore locale."
 
 #. Type: boolean
 #. Description
@@ -42,15 +40,16 @@ msgid ""
 "managed this way if you choose this option; if those markers are missing, "
 "you will have to update the file manually, or remove the file."
 msgstr ""
-"Observera att endast vissa, specifikt utmärkta delar, av filen kommer att "
-"hanteras på detta sätt om du väljer detta alternativ. Om markeringarna "
-"saknas måste du hantera filen manuellt eller ta bort den helt och hållet."
+"Si noti che, se si sceglie questa opzione, solo alcune sezioni specifiche "
+"del file di configurazione saranno gestite automaticamente; se questi "
+"indicatori mancano, sarà necessario aggiornare il file manualmente o "
+"rimuoverlo."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:3001
 msgid "Replace existing /etc/masqmail/masqmail.conf file?"
-msgstr "Ska den existerande filen /etc/masqmail/masqmail.conf ersättas?"
+msgstr "Sostituire il file «/etc/masqmail/masqmail.conf» esistente?"
 
 #. Type: boolean
 #. Description
@@ -59,8 +58,9 @@ msgid ""
 "The existing /etc/masqmail/masqmail.conf file currently on the system does "
 "not contain a marked section for automatic configuration management."
 msgstr ""
-"Den fil som finns i systemet idag har inga markeringar för automatisk "
-"hantering."
+"Il file «/etc/masqmail/masqmail.conf» attualmente esistente su questo sistema "
+"non contiene una sezione marcata per la gestione della configurazione "
+"automatica."
 
 #. Type: boolean
 #. Description
@@ -72,17 +72,17 @@ msgid ""
 "configuration file will not be managed automatically, and no further "
 "questions about masqmail configuration will be asked."
 msgstr ""
-"väljer du detta alternativ kommer den existerande filen att sparas som /etc/"
-"masqmail/masqmail.conf.debconf-backup och en ny fil skapas. Om du inte "
-"väljer detta alternativ kommer den nuvarande filen med inställningar inte "
-"att hanteras automatiskt och inga flera frågor kommer att ställas om "
-"inställningarna i masqmail."
+"Se si sceglie questa opzione, il file di configurazione esistente sarà "
+"salvato in «/etc/masqmail/masqmail.conf.debconf-backup» e verrà creato un "
+"nuovo file «/etc/masqmail/masqmail.conf». In caso contrario, il file di "
+"configurazione esistente non verrà gestito automaticamente e non saranno "
+"poste ulteriori domande sulla configurazione di Masqmail."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:4001
 msgid "Masqmail host name:"
-msgstr "Värdnamn för Masqmail:"
+msgstr "Nome dell'host di Masqmail:"
 
 #. Type: string
 #. Description
@@ -93,17 +93,16 @@ msgid ""
 "and generated Message-ID fields, as well as for expansion of unqualified "
 "addresses, and so on."
 msgstr ""
-"Ange namnet som ska användas av masqmail för att identifiera sig själv "
-"gentemot andra. Detta är med största sannolikhet maskinens värdnamn. Det "
-"används i SMTP-trafikens häslningsmeddelanden, i fältet Message-ID på e-post-"
-"meddelanden, vid utsökning av adresser utan komplett värd och andra liknande "
-"aktiviteter."
+"Inserire il nome usato da Masqmail per identificarsi. Probabilmente si "
+"tratta del nome dell'host della macchina. Viene utilizzato nel testo di "
+"saluto SMTP e nei campi «Message-ID» generati, così come per l'espansione di "
+"indirizzi non qualificati, ecc."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:5001
 msgid "Hosts considered local:"
-msgstr "Värdar som ska anses lokala"
+msgstr "Host considerati locali:"
 
 #. Type: string
 #. Description
@@ -113,9 +112,9 @@ msgid ""
 "considered \"local\". Mail to these hosts will be delivered to a mailbox (or "
 "Maildir or MDA) on this host."
 msgstr ""
-"Ange en lista, separerad med semikolon(;), över de värdar som anses vara "
-"\"lokala\". E-post till dessa kommer att levereras till en postlåda (mbox, "
-"maildir eller MDA) på denna värd."
+"Inserire un elenco, separato da punti e virgola (;), degli host che sono "
+"considerati «locali». I messaggi destinati a questi host verranno recapitati "
+"a una casella postale (o Maildir o MDA) su questo host."
 
 #. Type: string
 #. Description
@@ -124,22 +123,20 @@ msgid ""
 "You will most likely insert \"localhost\" as well as this host's fully "
 "qualified name and short name."
 msgstr ""
-"Minimifallen brukar innefatta \"localhost\" och den här värdens kompletta "
-"värdnamn samt kortformen av densamma."
+"Molto probabilmente si dovrà inserire «localhost» e i nomi FQDN e abbreviati "
+"di questo host."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:5001
 msgid "You can also use wildcard expressions containing \"*\" and \"?\"."
-msgstr ""
-"Jokertecken kan användas för att ersätta delar(\"*\") av strängen eller bara "
-"ett tecken (\"?\")."
+msgstr "È anche possibile usare caratteri jolly come «*» e «?»."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:6001
 msgid "Networks considered local:"
-msgstr "Nätverk som anses lokala:"
+msgstr "Reti considerate locali:"
 
 #. Type: string
 #. Description
@@ -150,10 +147,10 @@ msgid ""
 "dialup connection. Mail to these hosts will be delivered immediately, "
 "without checking for the online status."
 msgstr ""
-"Ange en lista, separerad med semikolon (;), över de värdar som finns på det "
-"lokala nätverket. Dessa ska alltid vara nåbara, utan en uppringd anslutning. "
-"E-post till dessa värdar kommer att levereras omedelbart utan att "
-"kontrollera status på deras uppkoppling."
+"Inserire un elenco, separato da punti e virgola (;), degli host che sono "
+"sulla rete locale, ossia che sono sempre raggiungibili senza una connessione "
+"dial-up. I messaggi a questi host verranno recapitati immediatamente, senza "
+"alcun controllo del loro stato in linea."
 
 #. Type: string
 #. Description
@@ -162,8 +159,8 @@ msgid ""
 "You can use wildcard expressions containing \"*\" and \"?\", for instance "
 "\"*.yournet.local\"."
 msgstr ""
-"Jokertecken kan användas för att ersätta delar(\"*\") av strängen eller bara "
-"ett tecken (\"?\"), exmepelvis \"*.hemma.hos.mig\"."
+"È anche possibile usare caratteri jolly com «*» e «?»: ad esempio, «*.miarete."
+"locale»."
 
 #. Type: string
 #. Description
@@ -174,16 +171,16 @@ msgid ""
 "to receive outbound mail from this host are always reachable, just use \"*\" "
 "here."
 msgstr ""
-"Fältet kan lämnas tomt om denna värd är den enda i nätverket. Om du inte "
-"vill använda Masqmail som en MTA utan uppkoppling och alla servrar som kan "
-"vara intressanta att kontakta alltid kommer att vara nåbara så anger du \"*"
-"\" här."
+"Questo campo può essere lasciato vuoto se questo host è l'unico nella rete. "
+"Se non si desidera utilizzare Masqmail come MTA fuori rete e tutti i server "
+"che potrebbero ricevere posta in uscita da questo host sono sempre "
+"raggiungibili, inserire semplicemente «*»."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:7001
 msgid "Interfaces for incoming connections:"
-msgstr "Gränssnitt för inkommande anslutningar:"
+msgstr "Interfacce per le connessioni in entrata:"
 
 #. Type: string
 #. Description
@@ -195,17 +192,18 @@ msgid ""
 "SMTP mail to this host, you should add the address of the relevant network "
 "interface, for instance \"localhost:25;192.168.1.2:25\"."
 msgstr ""
-"Av säkerhetsskäl lyssnar inte Masqmail i standardutförandet på alla "
-"nätverksgränssnitt. Om det inte finns andra värdar anslutna till denna värd "
-"kommer \"localhost:25\" att räcka för lokal körning. Om det finns fler "
-"värdar som kan behöva skicka e-post via SMTP till denna värd ska adresser "
-"för relevanta nätverk läggas till, ex. \"localhost:25, 192.168.1.2:25\"."
+"Per motivi di sicurezza, in modo predefinito Masqmail non si mette in "
+"ascolto su tutte le interfacce di rete. Se non ci sono altri host connessi a "
+"questo è sufficiente inserire «localhost:25» per le operazioni in locale. Se "
+"ci sono altri host che devono inviare posta SMTP a questo host, si dovrebbe "
+"aggiungere l'indirizzo della relativa interfaccia di rete, ad esempio "
+"«localhost:25;192.168.1.2:25»."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:8001
 msgid "Use the system log daemon for logging?"
-msgstr "Ska systemets loggtjänst användas för loggning?"
+msgstr "Utilizzare il demone del registro di sistema per le registrazioni?"
 
 #. Type: boolean
 #. Description
@@ -214,26 +212,27 @@ msgid ""
 "Masqmail may log via the system log daemon (syslog) or use its own custom "
 "logging in /var/log/masqmail/masqmail.log."
 msgstr ""
-"Masqmail kan logga via systemets loggningstjänst (syslog) eller använda sin "
-"egen loggning i /var/log/masqmail/masqmail.log."
+"Masqmail può effettuare le registrazioni tramite il demone del registro di "
+"sistema (syslog) oppure effettuare le proprie registrazioni personalizzate "
+"in «/var/log/masqmail/masqmail.log»."
 
 #. Type: select
 #. Choices
 #: ../masqmail.templates:9001
 msgid "file"
-msgstr "fil"
+msgstr "file"
 
 #. Type: select
 #. Choices
 #: ../masqmail.templates:9001
 msgid "pipe"
-msgstr "rör"
+msgstr "pipe"
 
 #. Type: select
 #. Description
 #: ../masqmail.templates:9002
 msgid "Online detection method:"
-msgstr "Metod för att avgöra om anslutningen är uppkopplad:"
+msgstr "Metodo di rilevamento della modalità in linea:"
 
 #. Type: select
 #. Description
@@ -247,28 +246,26 @@ msgid ""
 "   if online or nothing if not. The \"guessnet\" program is a good\n"
 "   candidate for such use."
 msgstr ""
-"Masqmail har två metoder för att avgöra om anslutningen är uppkopplad eller "
-"inte. \"fil\" och \"rör\".\n"
-" - Med \"fil\" kommer en kontroll av att en viss fil existerar\n"
-"    att göras, namnet på uppkopplingen läses från filen.\n"
-" - Med \"rör\" kommer ett program eller skript att köras, utdatat här\n"
-"   är namnet på uppkopplingen eller tomhet om ingen uppkoppling\n"
-"   finns, Programmet \"guessnet\" är en bra kandidat för detta ändamål."
+"Masqmail ha due modalità per determinare se è in linea o meno: «file» e "
+"«pipe».\n"
+" - Con l'opzione «file» viene controllata l'esistenza di un file. Se esiste,\n"
+"   il nome della connessione viene letto da quel file.\n"
+" - Con l'opzione «pipe» viene chiamato un programma o uno script che\n"
+"   restituisce un nome se si è in linea o niente in caso contrario. A tal "
+"fine\n"
+"   il programma «guessnet» è una buona scelta."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:10001
 msgid "File used to determine the online status:"
-msgstr ""
-"Fil som ska användas för att avgöra om uppkopplingen är ansluten eller ej:"
+msgstr "File utilizzato per determinare lo stato in linea:"
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:11001
 msgid "Name of the program used to determine the online status:"
-msgstr ""
-"Namn på program som ska användas för att avgöra om uppkopplingen är ansluten "
-"eller ej:"
+msgstr "Nome del programma utilizzato per determinare lo stato in linea:"
 
 #. Type: string
 #. Description
@@ -277,14 +274,14 @@ msgid ""
 "Please choose the program to use to determine the online status. This "
 "program is called with \"mail\" as user ID."
 msgstr ""
-"Välj program som ska användas för att avgöra status för uppkopplingen. "
-"Programmet kommer att köras med användaren \"mail\"."
+"Scegliere il programma utilizzato per determinare lo stato in linea. Questo "
+"programma viene richiamato con nome utente «mail»."
 
 #. Type: select
 #. Description
 #: ../masqmail.templates:12001
 msgid "Local delivery style:"
-msgstr "Typ av leverans lokalt:"
+msgstr "Stile per la consegna locale:"
 
 #. Type: select
 #. Description
@@ -294,8 +291,9 @@ msgid ""
 "such as procmail or to Maildir-style mailboxes in the users' home "
 "directories."
 msgstr ""
-"Lokal post kan levereras till en mbox, till en mail delivery agent (MDA) ex. "
-"procmail eller till en Maildir-baserad postlåda i användarens hemkatalog."
+"La posta locale può essere consegnata ad una casella postale, a un mail "
+"delivery agent (MDA) come procmail, o a caselle postali stile Maildir nelle "
+"directory home degli utenti locali."
 
 #. Type: select
 #. Description
@@ -305,14 +303,14 @@ msgid ""
 "per-user basis with the \"mbox_users\", \"mda_users\" and \"maildir_users\" "
 "options."
 msgstr ""
-"Valet påverkar mekanismen för standardleverans. Den kan anges per användare "
-"med alternativen \"mbox_users\", \"mda_users\" och \"maildir_users\"."
+"Questa scelta ha un influsso sul meccanismo di consegna. Può essere definita "
+"secondo l'utente, con le opzioni «mbox_users», «mda_users» e «maildir_users»."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:13001
 msgid "MDA command line (including options):"
-msgstr "Kommandorad för MDA (inklusive alternativ):"
+msgstr "Comando del MDA (incluse le opzioni):"
 
 #. Type: string
 #. Description
@@ -322,14 +320,17 @@ msgid ""
 "arguments. You can use variable substitution here, such as ${rcpt_local} for "
 "the user name."
 msgstr ""
-"Ange sökvägen för mail delivery agenten (MDA), inklusive argument. Du kan "
-"använda kodord här, ex. ${rcpt_local} för lokalt användarnamn."
+"Scegliere il percorso al mail delivery agent (MDA), inclusi i relativi "
+"argomenti. È possibile usare le sostituzioni delle variabili, come ad "
+"esempio ${rcpt_local} per il nome utente."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:13001
 msgid "Masqmail's manual page describes all available variable substitutions."
-msgstr "Manualsidan för  Masqmail går igenom alla kodorden."
+msgstr ""
+"Le sostituzioni di variabili disponibili sono elencate nel manuale di "
+"Masqmail."
 
 #. Type: string
 #. Description
@@ -338,14 +339,15 @@ msgid ""
 "This question is meaningful even when choosing another option than MDA "
 "delivery, in case MDA is used for a restricted set of users."
 msgstr ""
-"Denna fråga är meningsfull även när man väljer ett annat leverans sätt än "
-"MDA, om MDA används för en liten del av användarna."
+"Questa domanda è importante anche se si sceglie un'altra opzione rispetto "
+"alla consegna MDA, nel caso in cui MDA venga utilizzato per un insieme "
+"ristretto di utenti."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:14001
 msgid "Should alias expansion be case sensitive?"
-msgstr "Ska utläsning av alias göras skiftlägeskänsligt?"
+msgstr "L'espansione dell'alias deve distinguere fra maiuscole e minuscole?"
 
 #. Type: boolean
 #. Description
@@ -354,14 +356,15 @@ msgid ""
 "Masqmail uses the file /etc/aliases to redirect local addresses. The search "
 "for a match in /etc/aliases can be case sensitive or not."
 msgstr ""
-"Masqmail läser filen /etc/aliases för att dirigera till rätt lokal adress. "
-"Avsökningen i /etc/aliases kan göras skiftlägeskänslig, eller ej."
+"Masqmail utilizza il file «/etc/aliases» per reindirizzare indirizzi locali. "
+"La ricerca di una corrispondenza in «/etc/aliases«può distinguere fra "
+"maiuscole e minuscole o meno."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:15001
 msgid "Start SMTP listening daemon?"
-msgstr "Start lyssnartjänsten för SMTP?"
+msgstr "Avviare il demone di ascolto SMTP?"
 
 #. Type: boolean
 #. Description
@@ -373,17 +376,17 @@ msgid ""
 "   mail via this host;\n"
 " - you use a local mail client that sends mail via SMTP."
 msgstr ""
-"Ange om du vill att Masqmail ska starta som en lyssnartjänst för SMTP. Detta "
-"behövs om:\n"
-" - det finns andra värdar i nätverket som vill skicka post via den här\n"
-"   värden.\n"
-" - du vill använda en lokal e-post-klient som skickar e-post över SMTP."
+"Scegliere se si desidera che Masqmail si avvii come demone di ascolto SMTP. "
+"Questo sarà necessario se:\n"
+" - ci sono altri host nella rete locale che potrebbero voler inviare\n"
+"   messaggi tramite questo host;\n"
+" - si utilizza un client di posta locale che invia messaggi tramite SMTP."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:16001
 msgid "Start SMTP queue running daemon?"
-msgstr "Starta SMTP som kötjänst?"
+msgstr "Avviare il demone di accodamento SMTP?"
 
 #. Type: boolean
 #. Description
@@ -394,22 +397,23 @@ msgid ""
 "delivered immediately, either because of delivery failures or because the "
 "host is not online on the first attempt to send a mail."
 msgstr ""
-"Välj detta alternativ om du vill att Masqmail ska starta som en kötjänst. "
-"Med största sannolikhet vill du göra detta, det behövs för post som inte kan "
-"levereras omedelbums, antingen på grund av fel vid leverans eller för att "
-"värden inte är uppkopplad vid första försöket att skicka post."
+"Scegliere questa opzione se si desidera che Masqmail venga avviato come "
+"demone di accodamento. Molto probabilmente questa opzione sarà necessaria. "
+"Viene utilizzata per messaggi che non possono essere consegnati "
+"immediatamente, o a causa di errori nella consegna oppure perché l'host non "
+"è in linea al primo tentativo d'invio del messaggio."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:17001
 msgid "Interval for the queue running daemon:"
-msgstr "Intervall för kötjänsten?"
+msgstr "Intervallo per il demone di accodamento:"
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:17001
 msgid "Please choose the interval for the queue running daemon."
-msgstr "Ange intervall för kötjänsten."
+msgstr "Scegliere un intervallo per il demone di accodamento."
 
 #. Type: string
 #. Description
@@ -419,22 +423,21 @@ msgid ""
 "m, h, d, or w, for seconds, minutes, hours, days, or weeks, respectively. "
 "For instance, \"-q10m\" defines a ten-minute interval between runs."
 msgstr ""
-"Formatet är \"-q\", följt av ett numeriskt värde samt en bokstäverna s, m, h,"
-"d eller w för sekunder, minuter, timmar, dagar eller veckor. Exempelvis "
-"anger \"-q10m\" ett intervall på tio minuter mellan körningarna."
+"Il formato è «-q» seguito da un valore numerico e una delle lettere s, m, h, "
+"d o w, rispettivamente per secondi, minuti, ore, giorni o settimane. Ad "
+"esempio, «-q10m» definisce un intervallo di 10 minuti fra le esecuzioni."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:17001
 msgid "Reasonable values are between five minutes (-q5m) and two hours (-q2h)."
-msgstr ""
-"Värden mellan fem minuter (-q5m) och två timmar (-q2h) får anses normala."
+msgstr "Valori ragionevoli sono fra 5 minuti («-q5m») e 2 ore («-q2h»)."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:18001
 msgid "Start POP3 fetch daemon?"
-msgstr "Starta tjänsten för hämtande från POP3-servrar?"
+msgstr "Avviare il demone di recupero POP3?"
 
 #. Type: boolean
 #. Description
@@ -444,9 +447,9 @@ msgid ""
 "If you do so, it will try to fetch mail from configured POP3 servers, "
 "detecting the online status first."
 msgstr ""
-"Ange detta alternativ om du vill att Masqmail ska starta som en hämtande "
-"tjänst. Om du gör detta så kommer den att försöka hämta e-post från "
-"förinställda POP3-servrar efter att uppkopplingen har genomförts."
+"Scegliere questa opzione se si desidera che Maqmail venga avviato come "
+"demone di recupero. In tal caso, Masqmail cercherà di recuperare la posta "
+"dai server POP3 configurati, rilevando dapprima lo stato in linea."
 
 #. Type: boolean
 #. Description
@@ -455,20 +458,20 @@ msgid ""
 "No matter what you choose here, you can later select whether you want to "
 "fetch mail when the host becomes online."
 msgstr ""
-"Oberoende vad du väljer här kan du senare välja att låta hämta e-post när "
-"värden är uppkopplad."
+"Non è essenziale cosa si sceglie qui, si può selezionare in un secondo tempo "
+"se si desidera recuperare la posta quando l'host entra in linea."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:19001
 msgid "Interval for the fetch daemon:"
-msgstr "Intervall för hämtningstjänsten:"
+msgstr "Intervallo del demone di recupero:"
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:19001
 msgid "Please choose the interval for the fetch daemon."
-msgstr "Ange intervallet för hömtningstjänsten."
+msgstr "Scegliere un intervallo per il demone di recupero."
 
 #. Type: string
 #. Description
@@ -477,22 +480,21 @@ msgid ""
 "The format is \"-go\", followed by a numeric value and one of the letters s, "
 "m, h, d, or w, for seconds, minutes, hours, days, or weeks, respectively."
 msgstr ""
-"Formatet är \"-go\" följt av ett numeriskt värde samt en bokstäverna s, m, h,"
-"d eller w för sekunder, minuter, timmar, dagar eller veckor."
+"Il formato è «-go», seguito da un valore numerico e una delle lettere s, m, "
+"h, d o w, rispettivamente per secondi, minuti, ore, giorni o settimane."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:19001
 msgid ""
 "Reasonable values are between two minutes (-go2m) and two hours (-go2h)."
-msgstr ""
-"Värden mellan fem minuter (-go2m) och två timmar (-go2h) får anses normala."
+msgstr "Valori ragionevoli sono fra 2 minuti («-go2m») e 2 ore («-go2h»)."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:20001
 msgid "Flush mail queue when online?"
-msgstr "Skicka e-post när du är uppkopplad?"
+msgstr "Svuotare la posta accodata quando si è in linea?"
 
 #. Type: boolean
 #. Description
@@ -502,15 +504,15 @@ msgid ""
 "as soon as the host comes online. This will be done by Masqmail's ip-up "
 "script in /etc/ppp/ip-up or in /etc/network/if-up.d/."
 msgstr ""
-"Ange om du vill att Masqmail ska skicka e-post omedelbart när en uppkoppling "
-"har genomförts. Kontrollen kommer att göras via Masqmails ip-up-skript i /"
-"etc/ppp/ip-up eller i /etc/network/if-up.d/."
+"Scegliere se si desidera che Masqmail svuoti immediatamente la propria coda "
+"di messaggi non appena l'host entra in linea. Questo verrà svolto dallo "
+"script di Masqmail «ip-up» in «/etc/ppp/ip-up» o in «/etc/netword/if-up.d/»."
 
 #. Type: boolean
 #. Description
 #: ../masqmail.templates:21001
 msgid "Fetch mail when online?"
-msgstr "Hämta e-post när du är uppkopplad?"
+msgstr "Recuperare la posta quando si è in linea?"
 
 #. Type: boolean
 #. Description
@@ -520,16 +522,15 @@ msgid ""
 "servers as soon as the host comes online. This will be done by Masqmail's ip-"
 "up script in /etc/ppp/ip-up or in /etc/network/if-up.d/."
 msgstr ""
-"Ange om du vill att Masqmail ska hämta e-post från POP3-servrar omedelbart "
-"när en uppkoppling har genomförts. Kontrollen kommer att göras via Masqmails "
-"ip-up-skript i /etc/ppp/ip-up eller i /etc/network/if-up.d/."
+"Scegliere se si desidera che Masqmail recuperi immediatamente la posta dai "
+"server POP3 non appena l'host entra in linea. Questo verrà svolto dallo "
+"script di Masqmail «ip-up» in «/etc/ppp/ip-up» o in «/etc/netword/if-up.d/»."
 
 #. Type: string
 #. Description
 #: ../masqmail.templates:22001
 msgid "List of interfaces used for Masqmail online detection:"
-msgstr ""
-"Lista över gränssnitt som Masqmail ska kontrollera uppkopplingsstatus för:"
+msgstr "Elenco delle interfacce usate per il rilevamento dello stato in linea:"
 
 #. Type: string
 #. Description
@@ -539,9 +540,10 @@ msgid ""
 "or fetching mails when going up. The list will be used in the /etc/ppp/ip-up "
 "and /etc/network/if-up.d/ scripts, when the interface goes up."
 msgstr ""
-"Ange en lista med nätverksgränssnitt som kan aktivera skickande och/eller "
-"hämtande av e-post när uppkoppling genomförs. Listan kommer att användas i "
-"skripten /etc/ppp/ip-up och /etc/network/if-up.d."
+"Scegliere un elenco di interfacce di rete che, quando collegate, "
+"comporteranno l'esecuzione automatica dei compiti di recupero e invio della "
+"posta. Questo elenco verrà utilizzato negli script «/etc/ppp/ip-up» ed «/etc/"
+"network/if-up.d/»."
 
 #. Type: string
 #. Description
@@ -550,8 +552,8 @@ msgid ""
 "A reasonable choice is for instance \"ppp0\" for a home computer connected "
 "by PPP or \"ppp0 eth0\" for a notebook."
 msgstr ""
-"Exempelvis är \"ppp0\" vanligt för hemdatorer medan \"ppp0 eth0\" skulle "
-"vara ett vanligt alternativ för bärbara datorer."
+"Una scelta ragionevole, ad esempio, è «ppp0» per un computer di casa connesso "
+"tramite PPP, oppure «ppp0 eth0» per un portatile."
 
 #. Type: string
 #. Description
@@ -560,5 +562,6 @@ msgid ""
 "Other possible choices are \"all\" to listen on all network interfaces, or "
 "\"none\" for not listening on any interface."
 msgstr ""
-"Andra vanliga alternativ är \"all\" för alla nätverksgränssnitt eller \"none"
-"\" för att inte lyssna på något gränssnitt."
+"Altre scelte possibili sono «all», per mettersi in ascolto su tutte le "
+"interfacce di rete, oppure «none», per non mettersi in ascolto su alcuna "
+"interfaccia."

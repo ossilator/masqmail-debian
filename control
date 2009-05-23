@@ -13,12 +13,12 @@ Provides: mail-transport-agent
 Suggests: mail-reader, logrotate
 Conflicts: mail-transport-agent
 Homepage: http://prog.marmaro.de/masqmail
-Description: A mailer for hosts without permanent internet connection
- MasqMail is an MTA (mail transport agent) and POP3 client for hosts
- that don't have a permanent internet connection, eg. a home network
- or a single host at home and notebooks. It has special support for
- connections to different ISPs.
+Description: mail transport agent for intermittently connected hosts
+ Masqmail is an MTA (mail transport agent) and POP3 client for hosts
+ with no permanent network connection, such as home network servers
+ or notebook computers. It has special support for connections to
+ different Internet Service Providers.
  .
- In these cases, MasqMail is a slim replacement for full-blown MTAs
- such as sendmail, exim, qmail or postfix. The POP3 client can be
- a small replacement for other full-featured tools like fetchmail.
+ In these cases, Masqmail is a slim replacement for full-blown MTAs
+ such as Sendmail, Exim, Qmail or Postfix. The POP3 client can be
+ a small replacement for other full-featured tools like Fetchmail.

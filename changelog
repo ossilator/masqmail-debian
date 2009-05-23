@@ -1,6 +1,6 @@
 masqmail (0.2.21-6) unstable; urgency=low
 
-  * Added check for `hostname -f' error in debconf (Closes: #416237)
+  * Added check for `hostname -f' error in debconf. (Closes: #416237)
   * Fixed delivering with empty or non-existent alias files. Thanks to Marcos
     Dione for the hint where to look. (Closes: #417842)
   * Fixed typos reported by Reuben Thomas. (Closes: #427096)
@@ -8,16 +8,19 @@ masqmail (0.2.21-6) unstable; urgency=low
   * Corrected man page about /etc/aliases. Thanks to Alexis. (Closes: #480477)
   * Closing old bug which is neither in etch nor in lenny. (Closes: #174975)
   * Added description to init script to remove lintian info.
-  * Updated debconf translations:
-    - de (by myself)
-    - fr (by Ivan Buresi, Christian Perrier; Closes: #504615)
-    - pt (by Traduz; Closes: #504794)
-    - ru (by Yuri Kozlov; Closes: #505730)
-    - vi (by Clytie Siddall; Closes: #513332)
-  * Added new debconf translation: sv (by Martin Bagge; Closes: #505794)
+  * Debconf templates and debian/control reviewed by the debian-l10n-
+    english team as part of the Smith review project. (Closes: #522252)
+  * [Debconf translation updates]
+    - Swedish by Martin Bagge (Closes: #505794, #523698)
+    - Italian by Vincenzo Campanella (Closes: #524307)
+    - German by Matthias Julius (Closes: #524497)
+    - Russian by Yuri Kozlov (Closes: #505730, #524893)
+    - Portuguese by Traduz (Closes: #504794, #524917)
+    - French by Ivan Buresi (Closes: #504615, #525148, #525397)
+    - Vietnamese by Clytie Siddall (Closes: #513332)
   * fixed watch file
 
- -- markus schnalke <meillo@marmaro.de>  Wed, 11 Mar 2009 10:13:48 +0100
+ -- markus schnalke <meillo@marmaro.de>  Sat, 23 May 2009 17:47:28 +0200
 
 masqmail (0.2.21-5) unstable; urgency=low
 
