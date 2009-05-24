@@ -6,6 +6,7 @@ case "$1" in
 		# Remove spool and config file
 		rm -rf /var/log/masqmail /var/spool/masqmail /etc/masqmail
 		rm -f /etc/default/masqmail
+		rm -rf /var/run/masqmail
 		# Remove from inetd.conf
 		##update-inetd --remove masqmail
 		;;

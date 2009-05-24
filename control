@@ -2,8 +2,8 @@ Source: masqmail
 Section: mail
 Priority: extra
 Maintainer: markus schnalke <meillo@marmaro.de>
-Standards-Version: 3.8.0
-Build-Depends: debhelper (>> 3.0), liblockfile-dev, libglib2.0-dev, libident-dev
+Standards-Version: 3.8.1
+Build-Depends: debhelper (>= 7), liblockfile-dev, libglib2.0-dev, libident-dev
 
 Package: masqmail
 Architecture: any
