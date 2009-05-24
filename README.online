@@ -13,15 +13,15 @@ ippparam arcor
 If this is set, $IPPARAM will be written to a 'route' file. Using some
 awk magic, the scripts finds out which file you have defined for
 online detection (if online_detect=file) and writes the value of
-$IPPARAM to this file. masqmail then uses this file to determine its
+$IPPARAM to this file. Masqmail then uses this file to determine its
 online status.
 
 
 /etc/network/interfaces
 -----------------------
 
-You can use the /etc/network/interfaces script to tell masqmail
-when a link goes up, and masqmail shall flush its queue and/or fetch mail.
+You can use the /etc/network/interfaces script to tell Masqmail
+when a link goes up, and Masqmail shall flush its queue and/or fetch mail.
 
 This is an example for a static interface:
 
@@ -34,7 +34,7 @@ iface eth0 inet static
 
 (This example is from Ben Low. Thanks, Ben :-))
 
-If you use masqmail on a notebook, you can define several interfaces,
+If you use Masqmail on a notebook, you can define several interfaces,
 depending on the network you are in. Read
 /usr/share/doc/ifupdown/examples/interfaces.gz
 for examples.
@@ -83,10 +83,10 @@ online_pipe="/usr/bin/mservdetect 192.168.1.2 224"
 #
 
 This is useful if you have a gateway with masqdialer running
-and masqmail on another host behind ('behind' as seen from the internet)
+and Masqmail on another host behind ('behind' as seen from the internet)
 
 Note:
 The online detect method 'mserver' is deprecated, and this debian
 package comes with that option disabled. You can still recompile the
 package with the ./configure option --enable-mserver, but this may be
-removed in future version of masqmail.
+removed in future version of Masqmail.

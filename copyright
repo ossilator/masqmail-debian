@@ -1,4 +1,4 @@
-This is Debian prepackaged version of MasqMail, a small mail transport agent
+This is Debian prepackaged version of Masqmail, a small mail transport agent
 for hosts without a permanent internet connection.
 
 This package is maintained by markus schnalke <meillo@marmaro.de>.
