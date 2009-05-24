@@ -19,8 +19,10 @@ masqmail (0.2.21-6) unstable; urgency=low
     - French by Ivan Buresi (Closes: #504615, #525148, #525397)
     - Vietnamese by Clytie Siddall (Closes: #513332)
   * fixed watch file
+  * fixed lintian errors/warnings
+  * updated to standards version 3.8.1
 
- -- markus schnalke <meillo@marmaro.de>  Sat, 23 May 2009 17:47:28 +0200
+ -- markus schnalke <meillo@marmaro.de>  Sun, 24 May 2009 20:23:33 +0200
 
 masqmail (0.2.21-5) unstable; urgency=low
 
