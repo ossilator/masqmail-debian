@@ -1,3 +1,9 @@
+masqmail (0.2.21-7) unstable; urgency=low
+
+  * Fixed segfault when using pipe online detection (Closes: #533006)
+
+ -- markus schnalke <meillo@marmaro.de>  Sun, 14 Jun 2009 11:41:04 +0200
+
 masqmail (0.2.21-6) unstable; urgency=low
 
   * Added check for `hostname -f' error in debconf. (Closes: #416237)
