@@ -3,7 +3,7 @@ masqmail (0.2.21-8) unstable; urgency=low
   * Debconf translation update: Vietnamese by Clytie Siddall (Closes: #548168)
   * New debconf translation: Japanese by Hideki Yamane (Closes: #555975)
 
- -- markus schnalke <meillo@marmaro.de>  Mon, 08 Feb 2010 13:14:13 +0100
+ -- markus schnalke <meillo@marmaro.de>  Mon, 08 Feb 2010 13:31:34 +0100
 
 masqmail (0.2.21-7.1) unstable; urgency=low
 
@@ -39,6 +39,7 @@ masqmail (0.2.21-6) unstable; urgency=low
     - Portuguese by Traduz (Closes: #504794, #524917)
     - French by Ivan Buresi (Closes: #504615, #525148, #525397)
     - Vietnamese by Clytie Siddall (Closes: #513332)
+    - Czech by Tomas Fidler (Closes: #528980)
   * fixed watch file
   * fixed lintian errors/warnings
   * updated to standards version 3.8.1
