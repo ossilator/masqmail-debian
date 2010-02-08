@@ -15,6 +15,7 @@ addresses.
 
 It has been compiled with the options:
                 --prefix=/usr --mandir='$${prefix}/share/man' \
+                --datadir='$${prefix}/share' \
                 --with-logdir=/var/log/masqmail \
                 --with-spooldir=/var/spool/masqmail \
                 --with-user=mail --with-group=mail \

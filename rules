@@ -22,6 +22,7 @@ build-stamp:
 	# Add here commands to compile the package.
 	./configure $(confflags) \
 		--prefix=/usr --mandir='$${prefix}/share/man' \
+		--datadir='$${prefix}/share' \
 		--with-logdir=/var/log/masqmail \
 		--with-spooldir=/var/spool/masqmail \
 		--with-user=mail --with-group=mail \
