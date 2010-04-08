@@ -4,6 +4,7 @@ Priority: extra
 Maintainer: markus schnalke <meillo@marmaro.de>
 Standards-Version: 3.8.4
 Build-Depends: debhelper (>= 7), liblockfile-dev, libglib2.0-dev, libident-dev
+Homepage: http://prog.marmaro.de/masqmail
 
 Package: masqmail
 Architecture: any
@@ -12,7 +13,6 @@ Replaces: mail-transport-agent
 Provides: mail-transport-agent
 Suggests: mail-reader, logrotate
 Conflicts: mail-transport-agent
-Homepage: http://prog.marmaro.de/masqmail
 Description: mail transport agent for intermittently connected hosts
  Masqmail is an MTA (mail transport agent) and POP3 client for hosts
  with no permanent network connection, such as home network servers
