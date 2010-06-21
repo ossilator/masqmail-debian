@@ -28,3 +28,8 @@ Upstream authors: Oliver Kurth, Markus Schnalke
 
 On Debian GNU/Linux systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL'.
+
+
+Note: The file contrib/rmail was taken from postfix. Wietse Venema
+said that no license would apply to that file. See:
+http://lists.debian.org/debian-legal/2010/02/msg00043.html
