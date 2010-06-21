@@ -33,8 +33,8 @@ and masqmail.aliases (5). Its configuration files live in the directory
 /etc/masqmail/ and in /etc/aliases.
 
 For more information about Masqmail see
-http://prog.marmaro.de/masqmail
+http://marmaro.de/prog/masqmail
 
 Oliver Kurth <oku@masqmail.cx> Tue, 16 Apr 2002 13:44:18 +0200
 
-Updated by markus schnalke <meillo@marmaro.de> Sun, 24 May 2009 20:28:19 +0200
+Updated by markus schnalke <meillo@marmaro.de> Mon, 21 Jun 2010 11:57:27 +0200
