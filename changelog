@@ -1,3 +1,13 @@
+masqmail (0.2.24-1) unstable; urgency=low
+
+  * New upstream release (Closes: #536060, #389731)
+  * New Debconf translation: Spanish by Francisco Javier Cuadrado
+    (Closes: #584864)
+  * Activated a hack to make group `uucp' trusted (Closes: #409912)
+  * Using doc-base now
+
+ -- markus schnalke <meillo@marmaro.de>  Thu, 24 Jun 2010 13:04:02 +0200
+
 masqmail (0.2.21-8) unstable; urgency=low
 
   * Debconf translation update: Vietnamese by Clytie Siddall (Closes: #548168)
