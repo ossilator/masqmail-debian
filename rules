@@ -18,6 +18,7 @@ endif
 build: build-stamp
 build-stamp:
 	dh_testdir
+	dh_autotools-dev_updateconfig
 
 	# Add here commands to compile the package.
 	./configure $(confflags) \
@@ -43,13 +44,9 @@ clean:
 	# Add here commands to clean up after the build process.
 	[ ! -f Makefile ] || $(MAKE) clean
 	[ ! -f Makefile ] || $(MAKE) distclean
-	# see /usr/share/doc/autotools-dev/README.Debian.gz
-	-test -r /usr/share/misc/config.sub && \
-		cp -f /usr/share/misc/config.sub config.sub
-	-test -r /usr/share/misc/config.guess && \
-		cp -f /usr/share/misc/config.guess config.guess
 	rm -f config.log
 
+	dh_autotools-dev_restoreconfig
 	dh_clean
 
 install: build
