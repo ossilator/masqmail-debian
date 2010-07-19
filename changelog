@@ -1,3 +1,17 @@
+masqmail (0.2.27-1) unstable; urgency=low
+
+  * New upstream release.
+  * Updated the version string in configure.ac, which upstream forgot.
+  * Set build depend on autotools-dev and used its scripts to ensure
+    to have recent config.{sub,guess} files.
+  * Suggest the MDA procmail.
+  * Improved the copyright file.
+  * Removed some pedantic lintian infos. Thanks to Jan Hauke Rahm for
+    the hint.
+  * Bumped standards version to 3.9.0.
+
+ -- markus schnalke <meillo@marmaro.de>  Mon, 19 Jul 2010 12:14:07 +0200
+
 masqmail (0.2.24-1) unstable; urgency=low
 
   * New upstream release (Closes: #536060, #389731)
