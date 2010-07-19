@@ -1,1 +1,3 @@
 - better Debian docs
+- investigate into `set -e' for init scripts
+  (see standards version 3.9.0)
