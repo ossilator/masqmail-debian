@@ -18,6 +18,9 @@
 # Modified for masqmail by Gregor Hoffleit <flight@debian.org>
 # Modified for masqmail by Oliver Kurth <oku@masqmail.cx>
 
+# standards version 3.9.0 recommends to be careful with `set -e' in
+# init scripts. See 9.3.2 of the policy for reference.
+# TODO: We should investigate into this.
 set -e
 
 # If you disable this file, masqmail can be run from /etc/inetd.conf
