@@ -6,11 +6,11 @@ Its source can be obtained from
 
     http://marmaro.de/prog/masqmail
 
+
 Upstream authors: Oliver Kurth, Markus Schnalke
 
-
     Copyright (C) 1999-2002 Oliver Kurth <oku@masqmail.cx>
-    Copyright (C) 2008 2010 markus schnalke <meillo@marmaro.de>
+    Copyright (C) 2008, 2010 markus schnalke <meillo@marmaro.de>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -30,6 +30,42 @@ On Debian GNU/Linux systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL-2'.
 
 
-Note: The file contrib/rmail was taken from postfix. Wietse Venema
-said that no license would apply to that file. See:
-http://lists.debian.org/debian-legal/2010/02/msg00043.html
+These files are licensed differently:
+
+src/md5/hmac_md5.*
+
+    Copyright 2010, markus schnalke <meillo@marmaro.de>
+    
+    Permission to use, copy, modify, and/or distribute this software for any
+    purpose with or without fee is hereby granted, provided that the above
+    copyright notice and this permission notice appear in all copies.
+    
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+src/md5/md5.*
+
+    Written by Solar Designer <solar at openwall.com> in 2001, and placed
+    in the public domain.  There's absolutely no warranty.
+
+
+src/libident/*
+
+    by Peter Eriksson
+    
+    This version of 'libident' is hereby released into the
+    Public Domain. It may be distributed for a fee or without
+    a fee. We only ask you not to pretend you wrote it.
+
+
+contrib/rmail
+
+    Was taken from postfix. Wietse Venema
+    said that no license would apply to that file. See:
+    http://lists.debian.org/debian-legal/2010/02/msg00043.html
