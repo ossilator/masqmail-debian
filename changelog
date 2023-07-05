@@ -1,3 +1,9 @@
+masqmail (0.3.6~dev-1) unstable; urgency=low
+
+  * New upstream release. (Closes: #986648)
+
+ -- Oswald Buddenhagen <oswald.buddenhagen@gmx.de>  Tue, 4 Jul 2023 14:30:42 +0200
+
 masqmail (0.3.4-2) unstable; urgency=medium
 
   * QA upload.

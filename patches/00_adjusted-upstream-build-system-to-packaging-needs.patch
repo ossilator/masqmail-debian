@@ -1,106 +1,54 @@
-dont install run_dir, log_dir, spool_dir and side effect upstream documentation
-dont replace the sendmail path
-Index: masqmail-0.3.40/Makefile.am
+don't install side effect upstream documentation
+don't replace the sendmail path
+Index: masqmail-0.3.5/Makefile.am
 ===================================================================
---- masqmail-0.3.40.orig/Makefile.am	2012-05-29 19:07:58.000000000 +0200
-+++ masqmail-0.3.40/Makefile.am	2012-06-07 14:57:48.948006720 +0200
-@@ -2,7 +2,7 @@
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -1,8 +1,8 @@
+ EXTRA_DIST = admin devel
  
- SUBDIRS = src man
+-SUBDIRS = src man docs examples tpl
++SUBDIRS = src man examples tpl
  
--install-data-local: log_dir spool_dir uid_bit conf_dir tpl_dir run_dir doc_dir rmail
-+install-data-local: uid_bit conf_dir tpl_dir run_dir doc_dir rmail
+-doc_DATA = ChangeLog NEWS AUTHORS COPYING README TODO INSTALL THANKS
++doc_DATA = NEWS AUTHORS README TODO THANKS
  
- uninstall-local: rm-rmail rm-doc_dir rm-tpl_dir rm-conf_dir rm-run_dir rm-spool_dir rm-log_dir
+ install-data-local: rmail conf_dir
  
-@@ -25,20 +25,18 @@
- 
- doc_dir:
- 	install -d $(DESTDIR)@docdir@
--	cp -r docs $(DESTDIR)@docdir@
- 	cp -r examples $(DESTDIR)@docdir@
--	cp ChangeLog NEWS AUTHORS COPYING README TODO INSTALL THANKS $(DESTDIR)@docdir@
-+	cp NEWS AUTHORS README TODO THANKS $(DESTDIR)@docdir@
- 
- rm-doc_dir:
- 	cd $(DESTDIR)@docdir@ && ( \
--	    rm -rf docs examples ; \
--	    rm -f ChangeLog NEWS AUTHORS COPYING README TODO INSTALL THANKS ; \
-+	    rm -rf examples ; \
-+	    rm -f NEWS AUTHORS README TODO THANKS ; \
- 	)
- 	rmdir $(DESTDIR)@docdir@
- 
- 
- run_dir:
--	install -d -o @with_user@ -g @with_group@ $(DESTDIR)/var/run/masqmail
- 
- rm-run_dir:
- 	rm -rf $(DESTDIR)/var/run/masqmail
-@@ -65,9 +63,7 @@
+@@ -19,9 +19,7 @@ rm-dirs:
  
  rmail:
- 	[ -d "$(DESTDIR)@prefix@/sbin" ] || mkdir -p "$(DESTDIR)@prefix@/sbin"
--	sed '/^SENDMAIL/s,/usr/sbin/sendmail,$(DESTDIR)@prefix@/sbin/masqmail,'\
--	    admin/rmail >$(DESTDIR)@prefix@/sbin/rmail
--	chmod 755 $(DESTDIR)@prefix@/sbin/rmail
-+	install -m 755 admin/rmail $(DESTDIR)@prefix@/sbin/rmail
+ 	[ -d "$(DESTDIR)@sbindir@" ] || mkdir -p "$(DESTDIR)@sbindir@"
+-	sed '/^SENDMAIL/s,/usr/sbin/sendmail,@sbindir@/masqmail,'\
+-	    @srcdir@/admin/rmail >$(DESTDIR)@sbindir@/rmail
+-	chmod 755 $(DESTDIR)@sbindir@/rmail
++	install -m 755 @srcdir@/admin/rmail $(DESTDIR)@sbindir@/rmail
  
  rm-rmail:
- 	rm -f $(DESTDIR)@prefix@/sbin/rmail
-Index: masqmail-0.3.40/Makefile.in
+ 	rm -f $(DESTDIR)@sbindir@/rmail
+Index: masqmail-0.3.5/Makefile.in
 ===================================================================
---- masqmail-0.3.40.orig/Makefile.in	2012-05-29 19:07:58.000000000 +0200
-+++ masqmail-0.3.40/Makefile.in	2012-06-07 14:58:23.928179390 +0200
-@@ -34,7 +34,7 @@
- subdir = .
- DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
- 	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
--	$(top_srcdir)/configure AUTHORS COPYING ChangeLog INSTALL NEWS \
-+	$(top_srcdir)/configure AUTHORS NEWS \
- 	THANKS TODO acconfig.h config.guess config.sub depcomp \
- 	install-sh missing mkinstalldirs
- ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-@@ -689,7 +689,7 @@
- 	uninstall uninstall-am uninstall-local
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -336,8 +336,8 @@
+ with_spooldir = @with_spooldir@
+ with_user = @with_user@
+ EXTRA_DIST = admin devel
+-SUBDIRS = src man docs examples tpl
+-doc_DATA = ChangeLog NEWS AUTHORS COPYING README TODO INSTALL THANKS
++SUBDIRS = src man examples tpl
++doc_DATA = NEWS AUTHORS README TODO THANKS
+ all: config.h
+ 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
  
- 
--install-data-local: log_dir spool_dir uid_bit conf_dir tpl_dir run_dir doc_dir rmail
-+install-data-local: uid_bit conf_dir tpl_dir run_dir doc_dir rmail
- 
- uninstall-local: rm-rmail rm-doc_dir rm-tpl_dir rm-conf_dir rm-run_dir rm-spool_dir rm-log_dir
- 
-@@ -709,19 +709,17 @@
- 
- doc_dir:
- 	install -d $(DESTDIR)@docdir@
--	cp -r docs $(DESTDIR)@docdir@
- 	cp -r examples $(DESTDIR)@docdir@
--	cp ChangeLog NEWS AUTHORS COPYING README TODO INSTALL THANKS $(DESTDIR)@docdir@
-+	cp NEWS AUTHORS README TODO THANKS $(DESTDIR)@docdir@
- 
- rm-doc_dir:
- 	cd $(DESTDIR)@docdir@ && ( \
--	    rm -rf docs examples ; \
--	    rm -f ChangeLog NEWS AUTHORS COPYING README TODO INSTALL THANKS ; \
-+	    rm -rf examples ; \
-+	    rm -f NEWS AUTHORS README TODO INSTALL THANKS ; \
- 	)
- 	rmdir $(DESTDIR)@docdir@
- 
- run_dir:
--	install -d -o @with_user@ -g @with_group@ $(DESTDIR)/var/run/masqmail
- 
- rm-run_dir:
- 	rm -rf $(DESTDIR)/var/run/masqmail
-@@ -746,9 +744,7 @@
+@@ -858,9 +858,7 @@
  
  rmail:
- 	[ -d "$(DESTDIR)@prefix@/sbin" ] || mkdir -p "$(DESTDIR)@prefix@/sbin"
--	sed '/^SENDMAIL/s,/usr/sbin/sendmail,$(DESTDIR)@prefix@/sbin/masqmail,'\
--	    admin/rmail >$(DESTDIR)@prefix@/sbin/rmail
--	chmod 755 $(DESTDIR)@prefix@/sbin/rmail
-+	install -m 755 admin/rmail $(DESTDIR)@prefix@/sbin/rmail
+ 	[ -d "$(DESTDIR)@sbindir@" ] || mkdir -p "$(DESTDIR)@sbindir@"
+-	sed '/^SENDMAIL/s,/usr/sbin/sendmail,@sbindir@/masqmail,'\
+-	    @srcdir@/admin/rmail >$(DESTDIR)@sbindir@/rmail
+-	chmod 755 $(DESTDIR)@sbindir@/rmail
++	install -m 755 @srcdir@/admin/rmail $(DESTDIR)@sbindir@/rmail
  
  rm-rmail:
- 	rm -f $(DESTDIR)@prefix@/sbin/rmail
+ 	rm -f $(DESTDIR)@sbindir@/rmail
