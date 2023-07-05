@@ -3,38 +3,24 @@ Masqmail for Debian
 
 This is the Debian package of my Masqmail MTA.
 
-Masqmail is an MTA specially designed for hosts with intermittent
-internet connections, i.e. hosts (or networks) at home or notebooks. It has
-special support for changing providers. It works both for sending mail
-(replacing exim, sendmail, postfix or qmail) and receiving mail (replacing
-fetchmail, but it also works in conjunction with fetchmail).
+Masqmail is an MTA specially designed for hosts with intermittent 
+internet connections, i.e. hosts (or networks) at home or notebooks. 
+It has special support for changing providers.
 
-Special support for 'changing providers' means individual configurations
-depending on the current connection to the internet and rewriting of sender
-addresses.
+Special support for 'changing providers' means individual 
+configurations depending on the current connection to the internet 
+and rewriting of sender addresses.
 
-It has been compiled with the options:
-                --prefix=/usr --mandir='$${prefix}/share/man' \
-                --datadir='$${prefix}/share' \
-                --with-logdir=/var/log/masqmail \
-                --with-spooldir=/var/spool/masqmail \
-                --with-user=mail --with-group=mail \
-                --with-confdir=/etc/masqmail \
-                --with-liblockfile \
-                --enable-auth \
-                --enable-ident \
-                --enable-maildir
+It has been compiled with directory locations adjusted to
+Debian's policy and the option:
+	--with-liblockfile
 
-i.e. with ESMTP AUTH support, with ident support and with Maildir support.
+(ESMTP AUTH support is availabe.)
 
-You will find all information necessary to configure Masqmail in the man
-pages masqmail (8), masqmail.conf (5), masqmail.route (5), masqmail.get (5)
-and masqmail.aliases (5). Its configuration files live in the directory
+You will find all information necessary to configure Masqmail in the 
+man pages masqmail (8), masqmail.conf (5), masqmail.route (5) and 
+masqmail.aliases (5). Its configuration files are in the directory 
 /etc/masqmail/ and in /etc/aliases.
 
 For more information about Masqmail see
 http://marmaro.de/prog/masqmail
-
-Oliver Kurth <oku@masqmail.cx> Tue, 16 Apr 2002 13:44:18 +0200
-
-Updated by markus schnalke <meillo@marmaro.de> Mon, 21 Jun 2010 11:57:27 +0200

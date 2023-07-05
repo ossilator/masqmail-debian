@@ -1,24 +1,26 @@
 Source: masqmail
 Section: mail
 Priority: extra
-Maintainer: markus schnalke <meillo@marmaro.de>
-Standards-Version: 3.9.0
-Build-Depends: debhelper (>= 7.2.3), liblockfile-dev, libglib2.0-dev, libident-dev, autotools-dev (>= 20100122.1)
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Standards-Version: 3.9.3
+Build-Depends: autotools-dev (>= 20100122.1), debhelper (>= 9), libglib2.0-dev, liblockfile-dev
 Homepage: http://marmaro.de/prog/masqmail
+Vcs-Git: git://git.debian.org/collab-maint/masqmail.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/masqmail.git;a=summary
 
 Package: masqmail
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, debconf (>> 0.5) | debconf-2.0, netbase, update-inetd
+Pre-Depends: dpkg (>= 1.15.7.2),
+Depends: ${shlibs:Depends}, ${misc:Depends}, netbase
 Replaces: mail-transport-agent
 Provides: mail-transport-agent
-Conflicts: mail-transport-agent
-Suggests: mail-reader, procmail, logrotate
+Conflicts: mail-transport-agent, rmail
+Suggests: logrotate, mail-reader, procmail
 Description: mail transport agent for intermittently connected hosts
- Masqmail is an MTA (mail transport agent) and POP3 client for hosts
- with no permanent network connection, such as home network servers
- or notebook computers. It has special support for connections to
+ Masqmail is an MTA (mail transport agent) for hosts with no
+ permanent network connection, such as home network servers or
+ notebook computers. It has special support for connections to
  different Internet Service Providers.
  .
  In these cases, Masqmail is a slim replacement for full-blown MTAs
- such as Sendmail, Exim, Qmail or Postfix. The POP3 client can be
- a small replacement for other full-featured tools like Fetchmail.
+ such as Sendmail, Exim, Qmail or Postfix.

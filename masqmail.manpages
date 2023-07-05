@@ -1,0 +1,4 @@
+debian/mailq.8
+debian/mailrm.8
+debian/newaliases.8
+debian/sendmail.8

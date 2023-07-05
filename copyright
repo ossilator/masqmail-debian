@@ -4,13 +4,17 @@ Masqmail can be obtained from:
 
     http://marmaro.de/prog/masqmail
 
-This package is maintained by markus schnalke <meillo@marmaro.de>.
+This package is maintained by:
+
+    Steffen Rumberger <inne@sdfeu.org> (Maintainer)
+    Jan Hauke Rahm <jhr@debian.org> (Debian Developer)
+    Markus Schnalke <meillo@marmaro.de> (Masqmail Developer)
 
 
 Upstream code:
 
     Copyright (C) 1999-2002 Oliver Kurth <oku@masqmail.cx>
-    Copyright (C) 2008, 2010 markus schnalke <meillo@marmaro.de>
+    Copyright (C) 2008-2011 markus schnalke <meillo@marmaro.de>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

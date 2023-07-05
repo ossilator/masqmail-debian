@@ -1,0 +1,23 @@
+masqmail (0.3.4-1) unstable; urgency=low
+
+    An upgrade from earlier versions of masqmail requires manual
+    adjustment of the configuration files. Without adjustments,
+    masqmail is at risk to behave differently or to fail completely.
+    As the configuration setups for masqmail can be very diverse,
+    automatic conversion is not possible. Human interaction is
+    required. The helper script /usr/lib/masqmail/config-transition
+    should be run with all masqmail configuration files as arguments,
+    likely:
+
+        /usr/lib/masqmail/config-transition /etc/masqmail/*
+
+    It will then print obsolete statements and explain how to replace
+    them. Usually, doing so is all that's needed. In some cases,
+    however, a setup might rely on the POP3 client or other features
+    that were removed in masqmail 0.3.x. Then, new packages (e.g.
+    fetchmail) might need to be installed.
+
+    In case of problems, help is provided on the upstream mailing list
+    at <masqmail@marmaro.de>.
+
+ -- Steffen Rumberger <inne@sdfeu.org>  Fri, 01 Jun 2012 18:14:41 +0200

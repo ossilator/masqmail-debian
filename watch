@@ -1,3 +1,3 @@
 version=3
 
-http://marmaro.de/prog/masqmail/files/masqmail-([0-9].+)\.tar\.gz
+http://marmaro.de/prog/masqmail/files/masqmail-(0\.3\.[0-9]+)\.tar\.gz

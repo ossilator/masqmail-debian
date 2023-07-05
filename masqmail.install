@@ -1,0 +1,4 @@
+admin/guess-hostname admin/config-transition /usr/lib/masqmail
+debian/newaliases /usr/bin
+debian/masqmail.conf /etc/masqmail
+

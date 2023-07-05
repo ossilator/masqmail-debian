@@ -1,0 +1,14 @@
+# Defaults for masqmail initscript
+# sourced by /etc/init.d/masqmail
+
+## Run masqmail as daemon.
+# Set INIT_SMTP_DAEMON="true" to masqmail act as SMTP server and 
+# accept SMTP connections, on "localhost:25" if not configured 
+# differently.
+INIT_SMTP_DAEMON="false"
+
+## Start queue-daemon.
+# Set INIT_QUEUE_DAEMON="true" to do regular queue runs at the 
+# specified time interval (QUEUE_DAEMON_IVAL).
+INIT_QUEUE_DAEMON="false"
+QUEUE_DAEMON_IVAL="-q10m"
