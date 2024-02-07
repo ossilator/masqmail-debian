@@ -8,7 +8,7 @@ export DEB_BUILD_HARDENING=1 # Enable hardening features. See hardened-cc(1).
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--with-liblockfile
+		--with-liblockfile --with-piddir=/var/run/masqmail
 
 override_dh_fixperms:
 	dh_fixperms -X/usr/sbin/masqmail
